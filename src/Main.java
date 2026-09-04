@@ -15,7 +15,7 @@ void main() {
             String carrera = scanner.nextLine();
 
             System.out.println("Ingerese su edad: ");
-            int edad = scanner.nextLine();
+            int edad = scanner.nextInt();
 
             Estudiante estudiante = new Estudiante(nombre, carrera, edad);
 
