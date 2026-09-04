@@ -6,6 +6,9 @@ import java.util.Scanner;
 
         public static void main(String[] args) {
 
+            for (int contador = 1; contador < 5; contador++){
+                System.out.println("registro procesado: "+ contador);
+
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Ingrese su nombre: ");
@@ -28,5 +31,7 @@ import java.util.Scanner;
             }
 
             estudiante.mostrarInformacion();
+
+            }
         }
 }
