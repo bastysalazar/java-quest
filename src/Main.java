@@ -15,7 +15,7 @@ import java.util.Scanner;
                     System.out.println("------MENU-------");
                     System.out.println("1). Estado");
                     System.out.println("2). Operaciones");
-                    System.out.println("3). Salir");
+                    System.out.println("0). Salir");
 
                     System.out.println("Eliga la opcion");
                     opcion = Scanner.nextInt();
