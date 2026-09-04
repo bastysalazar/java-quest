@@ -32,5 +32,12 @@ public class Estudiante {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+    public void mostraInformacion(){
+        System.out.println("nombre "+ nombre);
+        System.out.println("carrera "+ carrera);
+        System.out.println("edad" + edad);
+
+    }
 }
 
