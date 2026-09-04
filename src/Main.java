@@ -1,9 +1,9 @@
     //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    import java.util.Scanner;
+import java.util.Scanner;
 
-    public class main {
+    public class Main {
+
         public static void main(String[] args) {
 
             Scanner scanner = new Scanner(System.in);
@@ -17,15 +17,16 @@ void main() {
             System.out.println("Ingerese su edad: ");
             int edad = scanner.nextInt();
 
-            Estudiante estudiante = new Estudiante(nombre, carrera, edad);
+            Estudiante estudiante = new Estudiante(nombre, carrera, edad );
 
-            if (edad >= 18){
-                System.out.println("acceso autorizado");
-            } else{
-                System.out.println("acceso denegado");
+            if (edad < 18) {
+                System.out.println("el estudiante es menor de edad");
+            } else if (edad < 24) {
+                System.out.println("estudiante joven.");
+            } else {
+                System.out.println("estudiante adulto.");
             }
 
             estudiante.mostrarInformacion();
         }
-    }
 }
